@@ -1,0 +1,16 @@
+接口说明
+原型：
+unsigned int GetBitsValue(unsigned int input, unsigned int startbit, unsigned int bitlen)
+输入参数：
+        input      输入的整数
+         startbit   需要获取的开始bit
+         bitlen     需要获取的bit长度
+输出参数（指针指向的内存区域保证有效）：
+    无
+返回值：
+        对应的bit取值
+举例：
+输入：4, 2, 2
+返回：2
+4对应的二进制为100（bit0和bit1为0，bit2为1），那么从bit2开始的2位为10，那么对应的十进制为2。
+ 

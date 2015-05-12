@@ -1,0 +1,12 @@
+题目描述
+    编写程序，输入一个正整数n，求下列算式的值。要求定义和调用函数fact(k)计算k的阶乘。
+1+1/2!+ .... +1/n!
+计算结果保存在double类型变量中。
+接口说明
+原型：
+void GetResult(int InputNum, double *NumResult);
+输入参数：
+    Int  InputNum：输入一个正整数，进行表达式计算
+    char *NumResult：输出表达式的值
+返回值：
+    void

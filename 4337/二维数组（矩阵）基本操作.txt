@@ -1,0 +1,32 @@
+数据结构（结构体strmatrix）定义：
+二维数组行列最大规格MAXSIZE＝5 
+所有用例能够保证rownum/columnnum和表中实际数据保持一致，无需考虑不一致的场景
+实现接口，每个接口实现1个基本操作：
+voidsetnull(structstrmatrix *p)：实现数组内容清空
+intgetelementnum(structstrmatrix *p)：获取数组元素个数
+intgetxnum(structstrmatrix *p,intx)：获取数组中某个值的元素个数
+voidinsertrow(structstrmatrix *p,inti,int*x)：在二维数组中插入一行，需考虑i为异常值，x为一维数组，长度和二维数组p的列数相等
+voidinsertcolumn(structstrmatrix *p,inti,int*x)：在二维数组中插入一列，需考虑i为异常值，x为一维数组，长度和二维数组p的行数相等
+voidmatrixtrans(structstrmatrix *p)：实现方矩阵的置换操作，所谓方矩阵，即行数和列行数相等的矩阵，置换的算法举例如下：
+ 
+ 
+clip_image  =>   clip_image
+ 
+ 
+voidmatrixwhirl(structstrmatrix *p)：实现方矩阵顺时针旋转90度操作，算法举例如下：
+clip_image  =>   clip_image
+voidmatrixplus(structstrmatrix *plu,structstrmatrix *p,structstrmatrix *q)：实现两个矩阵相加，两个矩阵必须行数和列数都相等才能相加，算法举例如下：
+ 
+ 
+clip_image + clip_image = clip_image = clip_image   
+ 
+ 
+ 
+voidmatrixmultiply(structstrmatrix *mul,structstrmatrix *p,structstrmatrix *q)：实现两个矩阵相乘，两个矩阵相乘，必须满足第一个的矩阵列数等于第二个矩阵的行数，算法举例如下：
+ 
+ 
+clip_image ×clip_image =clip_image =clip_image
+ 
+ 
+ 
+题目框架中有9个参考用例，其它用例请自行编写。

@@ -1,0 +1,47 @@
+题目标题：
+
+根据数值占用BIT数，按顺序从输入字节流中解析出对应数值，解析顺序按输入数组astElement索引升序。
+详细描述：
+
+接口说明
+原型：
+voidDecode(unsignedintuiIutputLen,unsignedcharaInputByte[],unsignedintuiElementNum,ELEMENT_STRU astElement[]);
+输入参数：
+     unsignedintuiIutputLen：字节数组（流）长度
+unsignedcharaInputByte：字节数组（流）
+     unsignedintuiElementNum：解析数值个数
+ELEMENT_STRU astElement[]：数值的结构数组指针，含义如下
+     Struct
+{
+     unsignedintuiElementLength;    //表示uiElementValue占用BIT数，范围1~32
+     unsignedintuiElementValue;     //从字节流中按顺序解析的数值，用于输出
+}ELEMENT_STRU;
+输出参数（指针指向的内存区域保证有效）：
+    参见上述ELEMENT_STRU中uiElementValue描述
+返回值：
+    Void
+举例：
+输入:
+字节数组长度uiIutputLen为2；
+字节数组aInputByte[2]为{0x62, 0x80}，对应二进制为“01100010 1 000 0000”；
+解析数值个数uiElementNum为2；
+数值[0]的值占4个bit，即astElement[0].uiElementLength = 4；
+数值[1]的值占5个bit，即astElement[1].uiElementLength = 5；
+输出：
+数值[0]的值为6，二进制为“0110”，即astElement[0].uiElementValue = 6；
+数值[1]的值为5，二进制为“0010 1”，即astElement[1].uiElementValue = 5。
+ 
+涉及知识点：
+
+C语言基础：BIT
+性能要求：
+
+无
+圈复杂度要求：
+
+这个不由出题者提供，由后续判题系统全局配置
+如：函数圈复杂度低于10，类公函数小于20等
+代码工程和用例：
+C/C++:
+VS2005代码工程
+嵌入工程的CPPUNIT用例

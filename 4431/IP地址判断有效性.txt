@@ -1,0 +1,20 @@
+描述:
+题目标题：
+
+判断输入的字符串是不是一个有效的IP地址
+
+详细描述：
+
+请实现如下接口
+boolisIPAddressValid(constchar* pszIPAddr)
+输入：pszIPAddr 字符串
+输出：true 有效的IP地址，false，无效的IP地址
+
+约束
+
+输入IP为XXX.XXX.XXX.XXX格式
+字符串两端含有空格认为是合法IP
+字符串中间含有空格认为是不合法IP
+类似于 01.1.1.1， 1.02.3.4  IP子段以0开头为不合法IP
+子段为单个0 认为是合法IP，0.0.0.0也算合法IP
+

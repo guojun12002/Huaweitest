@@ -1,0 +1,26 @@
+题目标题：
+
+求二叉树的宽度和深度
+给定一个二叉树，获取该二叉树的宽度和深度。   
+ 
+例如输入
+   a
+  / \
+ b   c
+/ \ / \
+d e f g
+ 
+返回3.
+详细描述：
+
+接口说明
+原型：
+         int GetBiNodeInfo(BiNode &head, unsigned int *pulWidth, unsigned int *pulHeight)
+输入参数：
+         head   需要获取深度的二叉树头结点
+输出参数（指针指向的内存区域保证有效）：
+         pulWidth   宽度
+         pulHeight  高度
+返回值：
+         0          成功
+         1          失败或其他异常

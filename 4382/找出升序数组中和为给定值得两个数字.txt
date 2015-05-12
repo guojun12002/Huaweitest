@@ -1,0 +1,15 @@
+输入一个已经按升序排序过的数组和一个数字，在数组中查找两个数，使得它们的和正好是输入的那个数字。如果有多对数字的和等于输入的数字，输出任意一对即可。
+详细描述：
+
+接口说明
+原型：
+bool FindTwoNumbersWithSum(int aData[], unsignedint uiLength, int sum, int *pNum1, int *pNum2);
+输入参数：
+        int aData[]           // 升序数组
+         unsigned int uiLength // 数组元素个数
+      int sum,              // 给定两个数组的和
+输出参数（指针指向的内存区域保证有效）：
+        int*pNum1            // 第一个数字，对应数组索引小的
+      int *pNum2            // 第二个数字，对应数组索引大的
+返回值：
+    找到返回true，异常返回false

@@ -1,0 +1,9 @@
+题目背景
+计算半径为1到10的圆的面积，若面积在40到90之间请输出
+接口
+int OutPutRotundityArea（float* pResultArray，int &ArrayCount）
+float* pResultArray ：float型数组
+Int ArrayCount：数组长度
+规格
+要求时间复杂度为O(n)
+     π = 3.14 

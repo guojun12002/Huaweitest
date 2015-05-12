@@ -1,0 +1,12 @@
+reset
+reset board
+board add
+board delet
+reboot backplane
+backplane abort
+r
+reb
+r b
+b a
+bo a
+r hehe

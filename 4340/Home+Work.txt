@@ -1,0 +1,14 @@
+题目描述
+临近开学了，小C才想起来数学老师布置了暑假作业。暑假作业是很多张试卷，每张试卷所需的时间和获取的价值已知，请你帮他安排一下，用他仅剩的一点时间来做最有价值的作业。
+ 
+接口说明
+原型：
+int GetMaxValue(int nPapers, int nRemain, int paper[][2], double* pMaxValue) 
+输入参数：
+int  nPapers：试卷的数目(1≤Papers≤20)
+int  nRemain：表示剩余的时间(1≤nRemain≤10000)
+int  paper[][2]：nPapers*2的数组，每一行的两个元素依次为做完这一份试卷所需的时间、做完这份试卷获取的价值。如果剩余时间不够做完一份卷子，可根据剩余时间获得卷子的部分价值。
+输出参数：
+double * pMaxValue：获得的最大价值
+返回值：
+0:异常，1:成功

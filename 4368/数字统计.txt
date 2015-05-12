@@ -1,0 +1,32 @@
+题目标题：
+
+对输入的整型数组，输出数组元素中的最大值、最大值的个数、最小值和最小值的个数
+详细描述：
+
+接口说明
+原型：
+voidOutputMaxAndMin(int * pInputInteger,intInputNum,int * pMaxValue,int * pMaxNum,int * pMinValue,int * pMinNum);
+输入参数：
+    Int * pInputInteger：整型数组指针
+Int   InputNum：数组元素个数
+输出参数（指针指向的内存区域保证有效）：
+    int* pMaxValue：数组中最大值
+     int* pMaxNum：数组中最大值的个数
+     int* pMinValue：数组中最小值
+int* pMinNum：数组中最小值的个数
+返回值：
+    void
+涉及知识点：
+
+C语言基础：数组、比较
+性能要求：
+
+无
+圈复杂度要求：
+
+这个不由出题者提供，由后续判题系统全局配置
+如：函数圈复杂度低于10，类公函数小于20等
+代码工程和用例：
+C/C++:
+VS2005代码工程
+嵌入工程的CPPUNIT用例

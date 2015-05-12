@@ -1,0 +1,14 @@
+题目描述：
+
+输入字符串s和字符c，要求去掉s中所有的c字符，并输出结果。
+ 
+接口说明：
+
+原型：
+int removechars(char *in, char c, char *out);
+输入参数：
+     char *in 输入字符串
+char c
+输出参数：
+      char *out 输出处理后的字符串
+返回值：0：

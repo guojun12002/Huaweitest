@@ -1,0 +1,33 @@
+详细描述：
+
+数据结构（结构体strlnode）定义：
+data保存节点的值
+plast指向上一个节点
+pnext指向下一个节点
+下面的所有接口实现中，头结点也表示一个保存实际值的节点
+实现接口，每个接口实现1个基本操作：
+voidcreate(structstrlnode **p,intx)：创建1个头节点，头节点表示第0个节点，x表示头节点保存的值，该函数已经实现。
+voidinsertnode(structstrlnode **p,inti,intx)：在链表的第i个位置插入数值为x的节点，需考虑i异常。
+voiddeletenode(structstrlnode **p,inti)：删除链表的第i个节点，需释放该节点占用的内存，需考虑i异常。
+intgetnodenum(structstrlnode **p)：获取链表的节点个数，空链表返回0。
+voidbignumberplus(structstrlnode **plus,structstrlnode **p,structstrlnode **q)：实现两个大整数相加，链表p和链表q中存储两个大整数，相加后的整数存储到plus中。
+voidreadtolnode(structstrlnode **p,int*a,intsize)：将数组a中的数据存储到链表p当中，size为存储的数值的个数。该函数已经实现，举例如下：
+123＋4567＝4690
+p: [plast|data=1|pnext]<-> [plast|data=2|pnext] <-> [plast|data=3|pnext]
+q:[plast|data=4|pnext]<-> [plast|data=5|pnext] <-> [plast|data=6|pnext] <-> [plast|data=7|pnext]
+plus:[plast|data=4|pnext]<-> [plast|data=6|pnext] <-> [plast|data=9|pnext] <-> [plast|data=0|pnext]
+a[3] = {1,2,3}，存储到链表中的顺序和在数组中顺序保持一致：
+[plast|data=1|pnext]<-> [plast|data=2|pnext] <-> [plast|data=3|pnext]
+voidwritetosqlist(int*a,structstrlnode *p)：将链表p中的数据存储到数组a中。该函数已经实现，举例如下：
+[plast|data=1|pnext]<-> [plast|data=2|pnext] <-> [plast|data=3|pnext]存储到数组中的顺序和在链表中的顺序保持一致：a[3] = {1,2,3}
+题目框架中有7个参考用例，其它用例请执行编写
+重要说明：代码没有实现之前跑用例会访问越界，不用急于解决，代码实现之后问题消失。
+ 
+涉及知识点：
+
+双链表基本操作
+数组基本操作
+指针的指针
+动态内存申请和释放
+数组和链表之间的转换
+异常场景用例设计

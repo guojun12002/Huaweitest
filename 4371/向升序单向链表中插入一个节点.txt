@@ -1,0 +1,20 @@
+输入一个升序单向链表和一个链表节点，向单向链表中按升序插入这个节点。
+输入为空指针的情况视为异常，另外不考虑节点值相等的情况。
+链表结点定义如下：
+struct ListNode
+{
+      int       m_nKey;
+      ListNode* m_pNext;
+};
+详细描述：
+
+接口说明
+原型：
+ListNode* InsertNodeToList(ListNode* pListHead, ListNode* pInsertNode);
+输入参数：
+        ListNode* pListHead  单向链表
+         ListNode* pInsertNode 新插入节点
+输出参数（指针指向的内存区域保证有效）：
+    ListNode* pListHead  单向链表
+返回值：
+    正常插入节点返回链表头指针，其它异常返回空指针
